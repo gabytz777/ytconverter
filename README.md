@@ -1,54 +1,58 @@
-# YouTube to MP3 Downloader - Complete Setup Guide
-## Download & Setup (Follow in Order)
+YouTube to MP3 Downloader - Setup Guide
 
-1. INSTALL PYTHON
-   - Go to https://www.python.org/downloads/
-   - Download Python 3.12 or newer
-   - Run installer
-   - ✅ CHECK "Add Python to PATH" box (Important!)
-   - Click "Install Now"
+Just follow these steps in order and you should be good.
 
-2. INSTALL REQUIRED PACKAGES
-   - Press Windows + R
-   - Type "cmd" and press Enter
-   - Copy/paste these commands:
-     pip install yt-dlp
-     pip install moviepy
+Install Python
+Go to https://www.python.org/downloads/
 
-3. INSTALL FFMPEG
-   - Download from: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-   - Extract the zip file
-   - Create folder: C:\ffmpeg
-   - Go to extracted folder → bin folder
-   - Copy these 3 files to C:\ffmpeg:
-     * ffmpeg.exe
-     * ffplay.exe
-     * ffprobe.exe
+Download Python 3.12 (or newer) and run the installer.
+IMPORTANT: make sure you check the box that says “Add Python to PATH” before installing.
+Install the required packages
+Press Windows + R, type cmd, hit Enter.
+Then run:
 
-4. GET THE SCRIPT
-   - Save MP3.py to your computer
-   - Double-click to run
-   - If it opens in text editor:
-     * Right-click → Open with → Python
+pip install yt-dlp
+pip install moviepy
 
-## How to Use
-1. Run MP3.py
-2. Choose option:
-   - 1 = Single song
-   - 2 = Playlist
-   - 3 = Exit
-3. Select save location
-4. Paste YouTube link
-5. Wait for download
+Install FFmpeg
+Download it from:
+https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 
-## Troubleshooting
-If you get errors:
-- "python not found" = Reinstall Python, check "Add to PATH"
-- "yt-dlp not found" = Run: pip install yt-dlp
-- "FFmpeg not found" = Check files in C:\ffmpeg
-- Still not working? Run these in cmd:
-  * python --version
-  * pip --version
-  If no version shows, reinstall Python
+Extract the zip.
+Make a folder called:
 
-That's it! You can now download YouTube videos as MP3s! 🎵
+C:\ffmpeg
+
+Then go into the extracted folder → bin
+Copy these files into C:\ffmpeg:
+
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe
+
+Get the script
+Download/save MP3.py wherever you want.
+Double-click it to run.
+If it opens in a text editor instead, right-click → Open with → Python.
+
+How to use it
+Run MP3.py, then pick an option:
+1 = download one song
+2 = download a playlist
+3 = exit
+
+Pick where you want the files saved, paste the YouTube link, and let it do its thing.
+
+Troubleshooting
+If something breaks:
+
+“python not found” → reinstall Python and make sure “Add to PATH” is checked
+“yt-dlp not found” → run: pip install yt-dlp
+“FFmpeg not found” → make sure those 3 .exe files are actually in C:\ffmpeg
+
+If it still won’t work, open cmd and run:
+
+python --version
+pip --version
+
+If those don’t show anything, Python didn’t install correctly.
